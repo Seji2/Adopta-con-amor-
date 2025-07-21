@@ -1,0 +1,751 @@
+/* Reset y base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f6f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background-color: #3f51b5;
+  color: #fff;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2.8rem;
+  margin-bottom: 10px;
+}
+
+/* Navegación */
+nav {
+  background-color: #303f9f;
+  text-align: center;
+  padding: 12px 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 20px;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #ffeb3b;
+}
+
+/* Contenido principal */
+.container {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+/* Introducción */
+.intro {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.intro h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #3f51b5;
+}
+
+/* Tarjetas de mascotas */
+.mascotas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+.card {
+  background-color: #fafafa;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 15px;
+}
+
+.card-content h3 {
+  color: #3f51b5;
+  margin-bottom: 8px;
+  font-size: 1.2rem;
+}
+
+.card-content p {
+  color: #555;
+  font-size: 0.95rem;
+}
+.carrusel-mascotas {
+  display: flex;
+  justify-content: flex-end; /* Alinea a la derecha */
+  overflow-x: auto;
+  gap: 20px;
+  padding-bottom: 10px;
+  max-width: 100%;
+  scroll-behavior: smooth;
+}
+
+.tarjetas {
+  display: flex;
+  gap: 20px;
+}
+
+.tarjeta-mascota {
+  flex: 0 0 200px;
+  background: #fafafa;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.tarjeta-mascota img {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.btn-adoptar {
+  margin-top: auto;
+  padding: 8px 15px;
+  background-color: #4CAF50;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  text-align: center;
+  display: inline-block;
+}
+
+/* Opcional: ocultar scrollbar en navegadores modernos */
+.carrusel-mascotas::-webkit-scrollbar {
+  display: none;
+}
+.carrusel-mascotas {
+  -ms-overflow-style: none;  /* IE y Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+/* Footer */
+footer {
+  background-color: #303f9f;
+  color: white;
+  text-align: center;
+  padding: 20px 10px;
+  margin-top: 40px;
+  font-size: 0.9rem;
+}
+/* Formulario de adopción */
+.formulario-adopcion {
+  margin-top: 50px;
+}
+
+.formulario-adopcion h2 {
+  color: #45388e;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.formulario-adopcion form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.formulario-adopcion input,
+.formulario-adopcion textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  width: 100%;
+}
+
+.formulario-adopcion textarea {
+  resize: vertical;
+}
+
+.formulario-adopcion button {
+  background-color: #0d1250;
+  color: white;
+  padding: 12px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.formulario-adopcion button:hover {
+  background-color: #303030;
+}
+.tarjeta-mascota {
+  width: 250px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 15px;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin: 15px;
+}
+
+.tarjeta-mascota img {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+  height: 180px;
+}
+
+.tarjeta-mascota h3 {
+  color: #303f9f;
+  margin-top: 10px;
+  font-size: 1.3em;
+}
+
+.tarjeta-mascota p {
+  margin: 5px 0;
+  color: #333;
+  font-size: 0.95em;
+}
+
+.btn-adoptar {
+  background-color: #0d1250;
+  color: white;
+  border: none;
+  padding: 8px 20px;
+  margin-top: 10px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-adoptar:hover {
+  background-color: #5e5e5e;
+}
+
+#proceso.container {
+  background-color: #ffffff;
+  padding: 100px 60px;
+  border-radius: 30px;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.1);
+  max-width: 1100px;
+  margin: 80px auto;
+  font-family: 'Segoe UI', sans-serif;
+  user-select: none;
+}
+
+/* Título */
+#proceso .intro h2 {
+  color: #3f51b5;
+  font-size: 2em;
+  text-align: center;
+  margin-bottom: 15px;
+  user-select: none;
+}
+
+/* Descripción */
+#proceso .intro p {
+  font-size: 1em;
+  color: #5c5c5c;
+  text-align: center;
+  margin-bottom: 40px;
+  user-select: none;
+}
+
+/* Lista */
+#proceso .intro ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  counter-reset: pasos;
+}
+
+/* Elementos de la lista */
+#proceso .intro ol li {
+  counter-increment: pasos;
+  background: #ffffff;
+  margin-bottom: 25px;
+  padding: 18px 22px 18px 70px; /* espacio para el número */
+  font-size: 1em;
+  border-radius: 12px;
+  color: #333;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+  position: relative;
+  user-select: none;
+  transition: background-color 0.3s ease;
+}
+
+#proceso .intro ol li:hover {
+  background-color: #ffffff;
+}
+
+/* Números circulares */
+#proceso .intro ol li::before {
+  content: counter(pasos);
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #303f9f;
+  color: #ffffff;
+  font-size: 1em;
+  font-weight: bold;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 38px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+  user-select: none;
+  transition: background 0.3s;
+}
+
+#proceso .intro ol li:hover::before {
+  background: #767676; /* más fuerte al pasar el mouse */
+}
+
+/* Botones */
+#proceso button {
+  padding: 8px 16px;
+  font-size: 0.9em;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 20px;
+  user-select: none;
+  transition: background 0.3s ease;
+}
+
+#proceso button:hover {
+  background-color: #388e3c;
+}
+
+/* Navegación mejorada */
+nav {
+  background-color: #303f9f;
+  text-align: center;
+  padding: 12px 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 30px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  padding: 10px;
+  display: inline-block;
+  transition: color 0.3s, background-color 0.3s;
+}
+
+nav a:hover {
+  background-color: #3949ab;
+  border-radius: 6px;
+  color: #ffeb3b;
+}
+/* Sección Proceso */
+.pasos-adopcion {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.paso {
+  background-color: #e8eaf6;
+  border-left: 5px solid #3f51b5;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  transition: 0.3s;
+}
+
+.paso:hover {
+  transform: translateY(-5px);
+}
+
+.paso .numero {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #3f51b5;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.paso h3 {
+  font-size: 1.3rem;
+  margin-bottom: 8px;
+  color: #2c387e;
+}
+
+.paso p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* --- ESTILOS PARA LA SECCIÓN DE TESTIMONIOS --- */
+.testimonios-section {
+    background-color: #f9f9f9; /* Un fondo ligeramente diferente para destacar */
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.testimonios-section h2 {
+    color: #333;
+    font-size: 2.5em;
+    margin-bottom: 40px;
+}
+
+.testimonio-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    margin: 20px auto;
+    max-width: 700px;
+    text-align: left;
+    transition: transform 0.3s ease;
+}
+
+.testimonio-card:hover {
+    transform: translateY(-5px); /* Pequeño efecto al pasar el ratón */
+}
+
+.testimonio-card p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 20px;
+    font-style: italic; /* Para el texto de los testimonios */
+}
+
+.testimonio-card .autor {
+    display: block;
+    text-align: right;
+    font-weight: bold;
+    color: #007bff; /* Un color que combine con tu branding */
+    margin-top: 15px;
+    font-size: 0.95em;
+}
+
+/* --- ESTILOS PARA LA SECCIÓN DE RECURSOS --- */
+.recursos-section {
+    padding: 60px 20px;
+    background-color: #eef7ff; /* Un azul muy claro */
+    text-align: center;
+}
+
+.recursos-section h2 {
+    color: #333;
+    font-size: 2.2em;
+    margin-bottom: 30px;
+}
+
+.recursos-section p {
+    font-size: 1.1em;
+    color: #666;
+    margin-bottom: 40px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.recursos-section ul {
+    list-style: none; /* Quitamos los puntos por defecto */
+    padding: 0;
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+.recursos-section li {
+    background-color: #ffffff;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease;
+}
+
+.recursos-section li:hover {
+    transform: translateX(5px); /* Efecto al pasar el ratón */
+}
+
+.recursos-section li a {
+    display: block;
+    padding: 15px 25px;
+    text-decoration: none;
+    color: #007bff; /* Color de enlace principal */
+    font-weight: 600;
+    font-size: 1.05em;
+    text-align: left;
+}
+
+.recursos-section li a:hover {
+    color: #0056b3; /* Color más oscuro al pasar el ratón */
+}
+
+/* --- ESTILOS PARA LA SECCIÓN DE LLAMADO A LA ACCIÓN (CTA) --- */
+.cta-section {
+    background-color: #7f7ff2; /* Un color de fondo llamativo */
+    color: #ffffff;
+    padding: 70px 20px;
+    text-align: center;
+    border-radius: 0; /* Sin bordes redondeados, o si los quieres, ajusta */
+    margin-top: 0; /* Aseguramos que no haya margen superior si usas container */
+}
+
+.cta-section h2 {
+    font-size: 2.8em;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.cta-section p {
+    font-size: 1.3em;
+    margin-bottom: 40px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0.9;
+}
+
+.cta-section .boton-contacto {
+    display: inline-block;
+    background-color: #0c59ff; /* Un color de botón vibrante */
+    color: #333;
+    padding: 15px 35px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.cta-section .boton-contacto:hover {
+    background-color: #484848; /* Color más oscuro al pasar el ratón */
+    transform: translateY(-3px); /* Pequeño efecto de elevación */
+}
+
+/* --- Estilos para la línea horizontal --- */
+hr {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 60px auto; /* Espacio antes y después de la línea */
+    width: 80%; /* Ancho de la línea */
+    max-width: 900px; /* Para que no sea demasiado larga en pantallas grandes */
+}
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    max-width: 1200px; /* O el ancho máximo que uses para tu contenido principal */
+    margin-left: auto;
+    margin-right: auto;
+}
+.adopcion-formulario {
+  max-width: 900px;
+  margin: 60px auto;
+  background: #ffffff;
+  padding: 50px;
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+}
+
+.adopcion-formulario h2 {
+  text-align: center;
+  color: #3abdac;
+  font-size: 2em;
+  margin-bottom: 40px;
+}
+
+.form-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.col {
+  flex: 1;
+  min-width: 280px;
+  display: flex;
+  flex-direction: column;
+}
+
+.adopcion-formulario label {
+  margin: 12px 0 6px;
+  font-weight: 600;
+  color: #444;
+}
+
+.adopcion-formulario input,
+.adopcion-formulario select,
+.adopcion-formulario textarea {
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 1em;
+  background: #f9f9f9;
+  transition: border 0.3s;
+}
+
+.adopcion-formulario input:focus,
+.adopcion-formulario textarea:focus,
+.adopcion-formulario select:focus {
+  border-color: #7066bb;
+  outline: none;
+  background: #fff;
+}
+
+.adopcion-formulario textarea {
+  resize: vertical;
+}
+
+.adopcion-formulario input[type="checkbox"] {
+  margin-right: 8px;
+  transform: scale(1.1);
+}
+
+.boton-centro {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.btn-enviar {
+  background-color: #666abb;
+  color: white;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 25px;
+  font-size: 1em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-enviar:hover {
+  background-color: #4e43a0;
+}
+
+.contacto {
+  margin-top: 50px;
+  padding: 20px;
+  background-color: #f1f1f1;
+  border-radius: 10px;
+}
+
+.contacto h2 {
+  text-align: center;
+  color: #3f51b5;
+  margin-bottom: 15px;
+}
+
+.contacto p {
+  text-align: center;
+  color: #333;
+  font-size: 1rem;
+}
+
+.info-contacto {
+  margin-top: 20px;
+  text-align: center;
+  line-height: 1.8;
+}
+
+.info-contacto strong {
+  color: #614caf;
+}
+
+.redes-sociales {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.redes-sociales a {
+  color: #352ba4;
+  text-decoration: none;
+  margin: 0 5px;
+  transition: color 0.3s ease;
+}
+
+.redes-sociales a:hover {
+  color: #303f9f;
+}
+.contacto-botones {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.contacto-botones a {
+  display: inline-block;
+  padding: 12px 25px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+  background-color: #4CAF50; /* Verde WhatsApp */
+  transition: transform 0.2s ease, background-color 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.contacto-botones a.btn-email {
+  background-color: #2196F3; /* Azul para email */
+}
+
+.contacto-botones a:hover {
+  transform: scale(1.05);
+  background-color: #388e3c;
+}
+
+.contacto-botones a.btn-email:hover {
+  background-color: #1976D2;
+}

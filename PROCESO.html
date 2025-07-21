@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Adopta con Amor</title>
+  <link rel="stylesheet" href="STYLE.css" />
+  <link rel="icon" href="img/icono.png">
+</head>
+<body>
+
+  <header>
+    <h1>Adopta con Amor ✨</h1>
+    <p>Transforma vidas. Da una segunda oportunidad a una mascota.</p>
+  </header>
+
+  <nav>
+    <a href="MEJORA DE LA PAGINA.html">Inicio</a>
+    <a href="MASCOTAS.html">Mascotas</a>
+    <a href="PROCESO.html">Proceso</a>
+    <a href="CONTACTO.html">Contacto</a>
+  </nav>
+<section id="proceso" class="container proceso-adopcion">
+  <div class="intro">
+    <h2>¿Cómo es el proceso de adopción?</h2>
+    <p>Sigue estos pasos para adoptar una mascota responsablemente:</p>
+  </div>
+
+  <div class="pasos-adopcion">
+    <div class="paso">
+      <span class="numero">1</span>
+      <h3>Explora</h3>
+      <p>Consulta las mascotas disponibles y elige a tu futuro compañero.</p>
+    </div>
+    <div class="paso">
+      <span class="numero">2</span>
+      <h3>Solicita</h3>
+      <p>Llena el formulario de adopción con tus datos y motivación.</p>
+    </div>
+    <div class="paso">
+      <span class="numero">3</span>
+      <h3>Entrevista</h3>
+      <p>Uno de nuestros voluntarios se pondrá en contacto contigo para conocerte mejor.</p>
+    </div>
+    <div class="paso">
+      <span class="numero">4</span>
+      <h3>Visita</h3>
+      <p>Agenda una cita para conocer personalmente a la mascota.</p>
+    </div>
+    <div class="paso">
+      <span class="numero">5</span>
+      <h3>Adopta</h3>
+      <p>Finaliza el proceso y comienza una nueva etapa con tu nuevo amigo.</p>
+    </div>
+  </div>
+  <section class="adopcion-formulario">
+  <h2>🐾 Solicitud de Adopción</h2>
+  <form action="#" method="POST">
+    <div class="form-grid">
+
+      <!-- Columna izquierda -->
+      <div class="col">
+        <label for="nombre">Nombre completo</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="correo">Correo electrónico</label>
+        <input type="email" id="correo" name="correo" required>
+
+        <label for="telefono">Teléfono</label>
+        <input type="tel" id="telefono" name="telefono" required>
+
+        <label for="edad">Edad</label>
+        <input type="number" id="edad" name="edad" min="18" required>
+
+        <label for="ocupacion">Ocupación</label>
+        <input type="text" id="ocupacion" name="ocupacion">
+      </div>
+
+      <!-- Columna derecha -->
+      <div class="col">
+        <label for="tipo">Tipo de mascota</label>
+        <select id="tipo" name="tipo" required>
+          <option value="">-- Selecciona --</option>
+          <option value="perro">Perro</option>
+          <option value="gato">Gato</option>
+          <option value="otro">Otro</option>
+        </select>
+
+        <label for="experiencia">¿Tienes experiencia?</label>
+        <select id="experiencia" name="experiencia" required>
+          <option value="">-- Selecciona --</option>
+          <option value="si">Sí</option>
+          <option value="no">No</option>
+        </select>
+
+        <label for="motivo">¿Por qué deseas adoptar?</label>
+        <textarea id="motivo" name="motivo" rows="3" required></textarea>
+
+        <label>
+          <input type="checkbox" name="compromiso" required>
+          Me comprometo a cuidar con amor a la mascota ❤️
+        </label>
+      </div>
+    </div>
+
+    <div class="boton-centro">
+      <button type="submit" class="btn-enviar">Enviar solicitud</button>
+    </div>
+  </form>
+</section>
+
+  <section id="recursos" class="container recursos-section">
+    <h2>Recursos para Adoptantes</h2>
+    <p>Te ofrecemos guías y consejos para asegurar una adaptación exitosa y una vida feliz junto a tu nueva mascota.</p>
+    <ul>
+      <li><a href="#">Guía básica de cuidado para perros</a></li>
+      <li><a href="#">Consejos para la llegada de tu gato a casa</a></li>
+      <li><a href="#">Entrenamiento positivo: creando un vínculo fuerte</a></li>
+      <li><a href="#">Alimentación saludable para tu mascota</a></li>
+    </ul>
+  </section>
+
+</section>
+<footer>
+    <p>&copy; 2025 Adopta con Amor. Todos los derechos reservados para Jennifer Pech y Emmanuel Escalante.</p>
+  </footer>
